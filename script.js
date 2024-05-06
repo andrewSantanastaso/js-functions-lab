@@ -138,5 +138,31 @@ const checkPalindrome = function(input){
 
 console.log('Exercise 7 Result:', checkPalindrome("racecar"));
 
+/*
+Exercise 8: maxOfThree()
+
+Define a function, maxOfThree. It should accept three numbers and return the largest among them.
+
+Example: maxOfThree(17, 4, 9) should return 17.
+
+Complete the exercise in the space below:
+*/
+const maxOfThree = function(num1, num2, num3){
+    let max = num1
+    if (num1 < num2){
+        max = num2
+        if (num2 < num3){
+            max = max3
+        }
+    }
+    else if ((num1 > num2)&&(num1<num3)){
+        max = num3
+    }
+    return max
+    
+}
+
+
+console.log('Exercise 8 Result:', maxOfThree(5, 10, 8));
 
 
