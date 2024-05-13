@@ -8,16 +8,16 @@ Exercise 1 has been completed for you:
 
 const maxOfTwoNumbers = (x, y) => {
     if (x >= y) {
-      return x;
+        return x;
     } else {
-      return y;
+        return y;
     }
-  }
-  
-  console.log('Exercise 1 Result:', maxOfTwoNumbers(3, 9));
-  
+}
 
-  /*
+console.log('Exercise 1 Result:', maxOfTwoNumbers(3, 9));
+
+
+/*
 Exercise 2: isAdult()
 
 Write a function named isAdult. It should take an age (number) and return 'Adult' if the age is 18 or over and 'Minor' otherwise.
@@ -26,8 +26,8 @@ Example: isAdult(21) should return 'Adult'.
 
 Complete the exercise in the space below:
 */
-const isAdult = function(age){
-    if (age >=18){
+const isAdult = function (age) {
+    if (age >= 18) {
         return 'Adult'
     }
     else {
@@ -48,13 +48,13 @@ Example: isCharAVowel('a') should return true.
 
 Complete the exercise in the space below:
 */
-const isCharAVowel= function(char){
+const isCharAVowel = function (char) {
     char = char.toLowerCase()
-    if (char == 'a' || char =='e' || char =='i'|| char == 'o'|| char =='u'){
+    if (char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u') {
         return true
     }
-    else{
-        return  false
+    else {
+        return false
     }
 }
 
@@ -71,7 +71,7 @@ Example: generateEmail('johnsmith', 'example.com') should return 'johnsmith@exam
 
 Complete the exercise in the space below:
 */
-const generateEmail = function(name,domain){
+const generateEmail = function (name, domain) {
     return `${name}@${domain}`
 }
 
@@ -88,7 +88,7 @@ Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
 
 Complete the exercise in the space below:
 */
-const greetUser = function(name,time){
+const greetUser = function (name, time) {
     return `Good ${time}, ${name}!`
 }
 
@@ -104,9 +104,9 @@ Example: reverseString('rockstar') should return the string "ratskcor".
 
 Complete the exercise in the space below:
 */
-const reverseString = function(input){
+const reverseString = function (input) {
     let output = ''
-    for (let i = input.length; i >= 0;i--){
+    for (let i = input.length; i >= 0; i--) {
         output += input.charAt(i)
     }
     return output
@@ -124,14 +124,14 @@ Example: checkPalindrome('taco') should return false.
 
 Complete the exercise in the space below:
 */
-const checkPalindrome = function(input){
-    if (input === reverseString(input)){
+const checkPalindrome = function (input) {
+    if (input === reverseString(input)) {
         return true
     }
     else {
         return false
     }
-    
+
 }
 
 
@@ -147,19 +147,19 @@ Example: maxOfThree(17, 4, 9) should return 17.
 
 Complete the exercise in the space below:
 */
-const maxOfThree = function(num1, num2, num3){
+const maxOfThree = function (num1, num2, num3) {
     let max = num1
-    if (num1 < num2){
+    if (num1 < num2) {
         max = num2
-        if (num2 < num3){
+        if (num2 < num3) {
             max = max3
         }
     }
-    else if ((num1 > num2)&&(num1<num3)){
+    else if ((num1 > num2) && (num1 < num3)) {
         max = num3
     }
     return max
-    
+
 }
 
 
@@ -175,8 +175,8 @@ Example: calculateTip(50, 20) should return 10.
 Complete the exercise in the space below:
 */
 
-const calculateTip = function(bill, percentage){
-    return bill*(percentage/100)
+const calculateTip = function (bill, percentage) {
+    return bill * (percentage / 100)
 }
 
 console.log('Exercise 9 Result:', calculateTip(50, 20));
@@ -192,16 +192,16 @@ Example: convertTemperature(32, 'F') should return 0 (Celsius).
 Complete the exercise in the space below:
 */
 
-const convertTemperature = function(temp, scale){
+const convertTemperature = function (temp, scale) {
     let output
-    scale  = scale.toLowerCase();
-    if (scale === 'c'){
-        output = (temp * (1.8)+32)
+    scale = scale.toLowerCase();
+    if (scale === 'c') {
+        output = (temp * (1.8) + 32)
 
     }
-    else if (scale === 'f'){
-        output = ((temp - 32)/(1.8))
-        
+    else if (scale === 'f') {
+        output = ((temp - 32) / (1.8))
+
     }
     return output
 }
@@ -218,26 +218,26 @@ Example: basicCalculator(10, 5, 'subtract') should return 5.
 
 Complete the exercise in the space below:
 */
-const basicCalculator = function(num1, num2, operation){
+const basicCalculator = function (num1, num2, operation) {
     operation = operation.toLowerCase()
     let output
-    if (operation === 'add'){
-        output = num1+num2
+    if (operation === 'add') {
+        output = num1 + num2
     }
-    else if (operation === 'subtract'){
-        output = num1-num2
+    else if (operation === 'subtract') {
+        output = num1 - num2
     }
-    else if (operation === 'multiply'){
-        output = num1*num2
+    else if (operation === 'multiply') {
+        output = num1 * num2
     }
-    else if (operation ==='divide'){
-        output = num1/num2
+    else if (operation === 'divide') {
+        output = num1 / num2
     }
     return output
 }
 
 
-console.log('Exercise 11 Result:', basicCalculator(10, 5, "multiply"));
+console.log('Exercise 11 Result:', basicCalculator(10, 5, "subtract"));
 
 
 /*
@@ -250,21 +250,21 @@ Example: calculateGrade(100) should return A.
 Complete the exercise in the space below:
 */
 
-const calculateGrade = function(score){
+const calculateGrade = function (score) {
     let output
-    if (score< 60){
+    if (score < 60) {
         output = 'F'
     }
-    else if ((score >= 60)&&(score <70)){
+    else if ((score >= 60) && (score < 70)) {
         output = 'D'
     }
-    else if ((score >=70)&&(score<80)){
+    else if ((score >= 70) && (score < 80)) {
         output = 'C'
     }
-    else if ((score >= 80)&&(score <90)){
+    else if ((score >= 80) && (score < 90)) {
         output = 'B'
     }
-    else if (score >= 90){
+    else if (score >= 90) {
         output = 'A'
     }
     return output
@@ -286,11 +286,17 @@ Example: createUsername('Samantha', 'Green') should return 'SamGre12'.
 Complete the exercise in the space below:
 */
 
-const createUsername = function(firstName, lastName){
+/* const createUsername = function(firstName, lastName){
     output = `${firstName.charAt(0)}${firstName.charAt(1)}${firstName.charAt(2)}${lastName.charAt(0)}${lastName.charAt(1)}${lastName.charAt(2)}${firstName.length+lastName.length}`
     return output
-}
+} */
 
+const createUsername = function (firstName, lastName) {
+    let first = firstName.slice(0, 3)
+    let last = lastName.slice(0, 3)
+    let totalChar = firstName.length + lastName.length
+    return `${first}${last}${totalChar}`
+}
 console.log('Exercise 13 Result:', createUsername("Samantha", "Green"));
 
 
@@ -301,12 +307,12 @@ Challenge yourself with numArgs. This function should return the count of argume
 
 Complete the exercise in the space below:
 */
-const numArgs = function(...args){
-let total = 0;
-for(let i = 0; i< args.length; i++){
-    total++
-}
-return total
+const numArgs = function (...args) {
+    let total = 0;
+    for (let i = 0; i < args.length; i++) {
+        total++
+    }
+    return total
 }
 
 console.log('Exercise 14 Result:', numArgs(1, 2, 3, 4));
