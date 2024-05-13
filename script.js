@@ -105,9 +105,9 @@ Example: reverseString('rockstar') should return the string "ratskcor".
 Complete the exercise in the space below:
 */
 const reverseString = function (input) {
-    let output = ''
-    for (let i = input.length; i >= 0; i--) {
-        output += input.charAt(i)
+    let output = ""
+    for (let i = input.length - 1; i >= 0; i--) {
+        output += input[i]
     }
     return output
 }
