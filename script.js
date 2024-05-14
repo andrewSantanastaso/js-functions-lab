@@ -149,13 +149,10 @@ Complete the exercise in the space below:
 */
 const maxOfThree = function (num1, num2, num3) {
     let max = num1
-    if (num1 < num2) {
+    if (num2 > max) {
         max = num2
-        if (num2 < num3) {
-            max = max3
-        }
     }
-    else if ((num1 > num2) && (num1 < num3)) {
+    if (num3 > max) {
         max = num3
     }
     return max
@@ -163,7 +160,7 @@ const maxOfThree = function (num1, num2, num3) {
 }
 
 
-console.log('Exercise 8 Result:', maxOfThree(5, 10, 8));
+console.log('Exercise 8 Result:', maxOfThree(17, 10, 21));
 
 /*
 Exercise 9: calculateTip()
